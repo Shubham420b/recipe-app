@@ -9,7 +9,6 @@ const RecipeDescription = () => {
 
   useEffect(() => {
     getRecipeDesc(recipeId);
-    console.log(recipeDesc);
   }, [recipeId]);
 
   if (loading) {
