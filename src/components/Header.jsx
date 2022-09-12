@@ -1,8 +1,11 @@
 import { useContext, useRef } from "react";
 import SearchContext from "../context/searchContext";
 import styles from "./Header.module.css";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const navigate = useNavigate();
+
   const inputRef = useRef(null);
   const { setSearchText } = useContext(SearchContext);
 
@@ -15,9 +18,13 @@ const Header = () => {
     }
   };
 
+  const home = () => {
+    navigate(`/`);
+  };
+
   return (
     <header className={styles.header}>
-      <h1>Recipe Application</h1>
+      <h1 onClick={home}>Recipe Application</h1>
       <div className={styles.searchBox}>
         <input
           ref={inputRef}

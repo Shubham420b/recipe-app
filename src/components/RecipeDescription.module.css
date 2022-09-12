@@ -1,0 +1,47 @@
+.container {
+  padding: 20px;
+}
+
+.summary {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.imageConatiner img {
+  height: auto;
+  width: 350px;
+}
+
+.summaryContainer {
+  max-width: 500px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.tags span {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-dark);
+  border-radius: 5px;
+  padding: 3px 5px;
+  font-size: 14px;
+  color: var(--primary-dark);
+}
+
+.instructions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 25px;
+}
+
+.instructions h2 {
+  padding-bottom: 10px;
+}
