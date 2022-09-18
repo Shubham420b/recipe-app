@@ -1,6 +1,8 @@
 :root {
   --primary-color: orange;
   --primary-dark: rgb(160, 54, 5);
+  --badge-color: red;
+  --light: white;
 }
 
 * {

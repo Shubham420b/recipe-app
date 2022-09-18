@@ -2,6 +2,7 @@ import { useContext, useRef } from "react";
 import SearchContext from "../context/searchContext";
 import styles from "./Header.module.css";
 import { useNavigate } from "react-router-dom";
+import BookmarkBtn from "./BookmarkBtn";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -32,6 +33,7 @@ const Header = () => {
           placeholder="Search Recipes"
           onKeyDown={searchRecipe}
         />
+        <BookmarkBtn />
       </div>
     </header>
   );

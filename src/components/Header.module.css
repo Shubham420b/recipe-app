@@ -12,6 +12,11 @@
   cursor: pointer;
 }
 
+.searchBox {
+  display: flex;
+  gap: 15px;
+}
+
 .searchBox input {
   height: 35px;
   width: 300px;

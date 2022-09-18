@@ -1,0 +1,24 @@
+.bookmark {
+  border-radius: 50%;
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.bookmark p {
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  background-color: var(--badge-color);
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--light);
+}

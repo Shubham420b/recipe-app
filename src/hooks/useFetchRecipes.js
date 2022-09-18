@@ -11,7 +11,7 @@ export const useFetchRecipes = () => {
     setError(false);
     try {
       const res = await fetch(
-        `https://tasty.p.rapidapi.com/recipes/list?from=0&size=5&q=${searchText}`,
+        `https://tasty.p.rapidapi.com/recipes/list?from=0&size=10&q=${searchText}`,
         rapidApiOptions
       );
 
